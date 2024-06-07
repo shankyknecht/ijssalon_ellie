@@ -1,7 +1,7 @@
-tekst = "header"
-legte = len(tekst) + 4
-print()
-print(legte * "*")
-print(f"* {tekst} *")
-print(legte * "*")
-print()
+def decoreer(tekst=""):
+    lengte = len(tekst) + 4
+    print()
+    print(lengte * "*")
+    print(f"* {tekst} *")
+    print(lengte * "*")
+    print()
