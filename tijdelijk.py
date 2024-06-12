@@ -1,11 +1,10 @@
 from helper import decoreer
 
-def print_aanbiedingen():
-    prijzen = {
-        "aardbei" : 3,
-        "vanille" : 4,
-        "chcolade" : 5
-    }
+prijzen = {
+"aardbei" : 3,
+"vanille" : 4,
+"chcolade" : 5
+}
 
 aanbieding = prijzen["aardbei"] * 0,8
 
@@ -24,4 +23,3 @@ for el in reclame_tekst4:
         print(el.lower())
 
 decoreer("aanbieding")
-print_aanbiedingen()
