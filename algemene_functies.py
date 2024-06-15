@@ -1,9 +1,5 @@
-mijn_functie = {
-"2" : 4
-"4" : 16
-"10" : 100
-"12" : 144
-}
+def mijn_functie_1(a = 2, b = 4, c = 10, d = 12):
+    return a * a, b * b, c * c, d * d
 
 mijn_functie2 = {
     "12,3" : [15, 9, 36, 4]
@@ -11,3 +7,5 @@ mijn_functie2 = {
     "10,5" : [15, 5, 50, 2]
     "100,2" : [120, 80, 2000, 5]
 }
+
+print(mijn_functie_1)
