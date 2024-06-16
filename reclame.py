@@ -11,20 +11,20 @@ btw_bedrag = totaal * btw
 uitvoer = f"Het totaal van alle inkomsten van deze week is {totaal} euro, waarover {btw_bedrag} euro btw betaald dient te worden."
 return totaal
 
-mijn_lijst = 10,5,3,2,1,2,9 
+def laag_en_hoog(mijn_lijst = 10,5,3,2,1,2,9):
+    uitvoer = []
+    laagste = min(mijn_lijst)
+    hoogste = max(mijn_lijst)
+    uitvoer.append(laagste)
+    uitvoer.append(hoogste)
+    return uitvoer
 
-def laag_en_hoog(mijn_lijst):
-uitvoer = []
-laagste = min(mijn_lijst)
-hoogste = max(mijn_lijst)
-uitvoer.append(laagste)
-uitvoer.append(hoogste)
-return uitvoer
+from algemene_functies import mijn_functie_2
 
 def gemiddelde(mijn_lijst):
-aantal = len(mijn_lijst)
-totaal = 0
-for element in mijn_lijst:
-totaal += element
-gemiddelde = totaal / aantal
-return f"De gemiddelde inkomsten deze week zijn {gemiddelde} euro."
+    aantal = len(mijn_lijst)
+    totaal = 0
+    for element in mijn_lijst:
+    totaal += element
+    gemiddelde = totaal / aantal
+    return f"De gemiddelde inkomsten deze week zijn {gemiddelde} euro."
